@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* Page background and center alignment */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Heading styling */
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Video player styling */
+video {
+    width: 480px;
+    height: 480px;
+    border: 5px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on video */
+video:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive: shrink video on small screens */
+@media (max-width: 600px) {
+    video {
+        width: 90%;
+        height: auto;
+    }
+}
+</style>
+</head>
+
+<body>
+    <h1>Playing video </h1>
+    <video src="project.mp4" autoplay muted controls loop width="480" height="480">sorry! unable to play video. Network
+        error </video>
+</body>
+
+</html>
